@@ -41,7 +41,6 @@ public class ClientsController {
         currentClient.setName(client.getName());
         currentClient.setEmail(client.getEmail());
         currentClient = clientRepository.save(client);
-
         return ResponseEntity.ok(currentClient);
     }
 
